@@ -1,3 +1,4 @@
+// Use of the division method (maths) to find the hcf of two numbers,according to byjus website this is called shortcut method
 import java.util.*;
 public class findGCD2{
 

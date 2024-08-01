@@ -1,7 +1,11 @@
-
+// Use of a function
+import java.util.*;
 public class findGCD1 {
     public static void main(String[] args){
-        System.out.println(GCD(8, 12));
+        Scanner sc = new Scanner(System.in);
+        int p = sc.nextInt();
+        int q = sc.nextInt();
+        System.out.println(GCD(p, q));
     }
     public static int GCD(int a, int b) {
 
@@ -14,5 +18,14 @@ public class findGCD1 {
         }
 
         return b;
+    }
+    // EASY WAY, EASY WAY TO REMEMBER ACCORDING TO LOGIC
+        public static int getHcf(int i, int j) {
+        while(i%j != 0) {
+            int temp = i%j;
+            i = j;
+            j = temp;
+        }
+        return j;  // divisor is hcf when rem = 0
     }
 }

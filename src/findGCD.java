@@ -24,6 +24,7 @@ public class findGCD{
                 n2 = n2 - n1;
             }
         }
-        System.out.println("GCD is : "+ n2);
+        System.out.println("GCD is : "+ n1);
+        // System.out.println("GCD is : "+ n2); Both are correct!!
     }
 }

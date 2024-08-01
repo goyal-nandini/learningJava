@@ -1,3 +1,4 @@
+// Bit difficult now, for me
 import java.util.*;
 public class findGCD3{
     public static void main(String [] args){
@@ -17,13 +18,13 @@ public class findGCD3{
            int f = (g * n2);
            int h = n1 - f;
            //System.out.print(n1 + " = " + "(" + n2 + " * " + g + ") + " + h);
+           //System.out.println();
             if (h == 0)
             {
                 break;
             }
            n1 = n2;
            n2 = h;
-           //System.out.println();
 
         }
         int ans = 0;
@@ -32,7 +33,6 @@ public class findGCD3{
             if (n1 % i == 0 && n2 % i == 0)
            {
              ans = i;
-             //System.out.println("Your GCD is " + ans);
            }
 
         }
