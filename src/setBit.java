@@ -12,5 +12,6 @@ public class setBit {
         int newNumber = bitMask | number;
         System.out.print("The new number after setting the bit at given position " + pos + " : ");
         System.out.println(newNumber);
+
     }
 }

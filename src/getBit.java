@@ -14,5 +14,6 @@ public class getBit {
         } else {
             System.out.println("Bit at position " + pos + " is one(1).");
         }
+
     }
 }
