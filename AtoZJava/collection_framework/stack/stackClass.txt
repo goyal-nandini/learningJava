@@ -1,0 +1,19 @@
+📌List<Integer> stack = new Stack<>();:
+Here, you are using the Stack class, but you're referencing it through the List
+interface. This means you can only use the methods that are part of the List interface
+(like add(), get(), remove(), etc.).
+
+Full Advantage of Stack Methods (push(), pop(), peek()): When you reference the stack as
+a List, you lose access to push(), pop(), and peek() directly, because these methods are
+not part of the List interface.
+
+To fully utilize push(), pop(), and peek(), you must use the Stack class directly (e.g.,
+Stack<Integer> stack = new Stack<>();), not the List interface.
+
+⭐In summary:
+List<Integer> stack = new Stack<>(); means you're working with List behavior.
+
+You cannot directly use push(), pop(), and peek() unless you cast it to a Stack explicitly.
+
+Stack<Integer> stack = new Stack<>(); allows you to fully access Stack-specific methods
+like push(), pop(), and peek().

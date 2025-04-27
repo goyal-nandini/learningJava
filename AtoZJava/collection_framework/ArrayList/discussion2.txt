@@ -1,0 +1,15 @@
+GENERIC CLASS:
+a generic class allows you to write classes, interfaces, and methods with a placeholder
+for the type of data they operate on. This is useful when you want to work with objects of
+different types in a type-safe way. The <> symbols are used to specify the type parameters
+for a generic class or method.
+
+Why Use Generics?
+Type Safety: The compiler checks types at compile time and prevents adding incompatible
+types to collections, reducing runtime errors.
+
+Eliminates Casting: Since the collection knows the type, you don’t need to cast elements
+when retrieving them.
+
+Code Reusability: You can create one class or method and reuse it for different types,
+ which keeps the code cleaner and more flexible.

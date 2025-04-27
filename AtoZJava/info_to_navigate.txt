@@ -1,0 +1,6 @@
+hi
+collection_framework wale package me
+m sare classes ka folder bna rhi hun...aur unk ander interfaces ka...
+jo in classes se hi implement hot hai...
+jaise linkedlist class queue aur list dono se implement hoti hai... soo
+okay got it!!

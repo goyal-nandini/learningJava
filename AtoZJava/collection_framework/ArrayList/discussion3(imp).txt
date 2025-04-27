@@ -1,0 +1,8 @@
+time complexity:
+add to list --> O(n) shfiting elements to right
+
+removing from list --> O(n) shifting elements to left
+
+set method --> O(1) direct jump to that element for setting
+
+contains method --> O(n) traversing to check if that element there to not?

@@ -1,0 +1,24 @@
+ques was if there are stack methods then why stack not used as interface??
+
+📌Why There’s No Stack Interface?
+In Java, Stack was designed as a specific implementation of a collection that
+follows the LIFO principle, and it wasn't necessary to define a Stack interface.
+Instead, the Stack class itself provides its own methods that are specific to how a
+stack works.
+
+In contrast, collections like List, Queue, and Set are interfaces because they
+represent generalized behaviors for different types of collections (array-based,
+linked, unordered, etc.).
+
+However, Stack is more specialized, so it directly provides methods like push(),
+pop(), etc. within its class.
+
+📌⭐👍
+Stack Class (Not an Interface):
+Stack is a class, not an interface.
+
+Stack extends the Vector class (which is a List implementation).
+
+Even though there's no Stack interface, Stack has its own specific methods because
+it was designed to behave as a LIFO (Last In, First Out) collection.
+

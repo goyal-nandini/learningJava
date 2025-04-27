@@ -1,0 +1,56 @@
+📍📍
+1. Stack<Integer> num = new Stack<>();
+✅ Here, you are saying:
+
+"Hey Java, I am directly using a Stack."
+
+You can use Stack-specific methods:
+
+push(), pop(), peek(), empty()
+
+Also, because Stack extends Vector (which implements List), you can also use List methods:
+
+add(), get(index), remove()
+
+2. List<Integer> num = new Stack<>();
+✅ Here, you are saying:
+
+"Hey Java, I just want to use List behavior."
+
+Even though Stack is inside, you treat it like a List.
+
+You can only do:
+
+add(), remove(), get(index), etc. (✅ List methods)
+
+❌ Cannot directly call push(), pop(), peek() without typecasting.
+
+📍📍
+🔵 1. LinkedList<Integer> num = new LinkedList<>();
+✅ Here, you are saying:
+
+"Hey Java, I am using a LinkedList."
+
+You can use both List and Queue behaviors because LinkedList implements both List and
+Queue interfaces.
+
+You can do:
+
+add(), remove(), get(index), etc. (List behavior)
+
+offer(), poll(), peek(), etc. (Queue behavior)
+
+🔵 2. Queue<Integer> num1 = new LinkedList<>();
+✅ Here, you are saying:
+
+"Hey Java, I only care about the Queue behavior."
+
+Even though LinkedList is inside, you use it like a Queue.
+
+You can do:
+
+offer(), poll(), peek(), etc.
+
+❌ You should not (and cannot) use List-specific methods like get(index) unless you
+typecast.
+
