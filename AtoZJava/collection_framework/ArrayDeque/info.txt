@@ -1,0 +1,32 @@
+ArrayDeque is short for Array Double-Ended Queue.
+It lets you add or remove elements from both ends — front and rear.
+
+✅ Why use ArrayDeque?
+It’s faster than LinkedList for stack/queue operations.
+
+It's often used to implement:
+
+A stack (like books piled up).
+
+A queue (like a line).
+
+👇
+Methods You Should Know
+
+Method	        Description
+offer(x)	    Add to back --> from queue interface
+offerFirst(x)	Add to front --> from deque interface with extends Queue
+offerLast(x)	Add to back (same as offer)
+poll()	        Remove from front
+pollFirst()	    Remove from front (same as pollFirst)
+pollLast()	    Remove from back
+peek()	        View front (same as peekFirst())
+peekFirst()	    View front
+peekLast()	    View back
+
+👇
+When we say Deque<E> extends Queue<E>, we mean:
+
+The Deque interface inherits all the methods of the Queue interface —
+and adds some extra methods of its own.
+

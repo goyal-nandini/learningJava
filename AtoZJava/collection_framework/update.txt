@@ -1,3 +1,4 @@
+27/4
 We learned today to implement
 @@LIST interface using
 array list class
@@ -7,3 +8,6 @@ implementing the
 @@QUEUE interface using linked list class so
 
 linked list can implement two interfaces list and queue
+
+29/4
+now did priorityqueue and arraydeque
