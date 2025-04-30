@@ -6,3 +6,8 @@ removing from list --> O(n) shifting elements to left
 set method --> O(1) direct jump to that element for setting
 
 contains method --> O(n) traversing to check if that element there to not?
+
+hi, time complexity for set interface
+for HashSet its O(1)
+for LinkedHashSet its O(1)
+for TreeSet its O(log n)

@@ -1,0 +1,18 @@
+TreeSet is a class in Java’s Collection Framework that:
+
+      @  Implements the Set interface
+
+      @  Stores elements in sorted (ascending) order
+
+      @  Does not allow duplicates
+
+      @  Is based on a "Red-Black Tree" (a type of self-balancing "binary search tree")
+
+Feature:        Description:
+Null	        Does not allow null (throws NullPointerException if added)
+Performance	    "Slower than HashSet and LinkedHashSet" (O(log n) operations)
+Implements	    NavigableSet, SortedSet, Set interfaces
+
+⭐Internally:
+TreeSet is backed by a class called TreeMap, which uses a Red-Black Tree.
+
