@@ -1,0 +1,51 @@
+✅ Does LinkedHashSet really extend HashSet?
+Yes, technically:
+
+public class LinkedHashSet<E> extends HashSet<E>
+
+👇
+But here's what it really means:
+
+  @ HashSet uses a HashMap internally (just keys).
+
+  @ "LinkedHashSet" uses a "LinkedHashMap" instead, which:
+
+           @ Maintains insertion order using a "doubly linked list".
+
+           @ Still ensures uniqueness (like all sets).
+
+So, "LinkedHashSet" inherits all methods from "HashSet" (like add, clear, remove, etc.)
+but adds the extra feature of maintaining insertion order.
+
+🔍 Think of it like this:
+Set = Interface (defines common behavior)
+
+HashSet = Fast, unordered set
+
+LinkedHashSet = Same as HashSet, but remembers the order in which things were added
+
+✅ Analogy:
+If HashSet is a plain box that ensures no duplicates, then LinkedHashSet is the
+ same box but with a label on each item so you know in what order they were put in.
+
+📌👇
+now the question arises does LinkedHashSet directly implements Set??
+ANS NO!!
+LinkedHashSet does not directly implement the Set interface.
+But it does behave like a Set, because it inherits all the necessary functionality
+
+ACTUALLY
+Set is implemented by AbstractSet
+
+HashSet extends AbstractSet
+
+LinkedHashSet extends HashSet
+
+👇📍
+  @  AbstractSet is an abstract class in Java.
+
+  @  It provides a basic (partial) implementation of the Set interface.
+
+  @  It saves time for developers: instead of implementing every method in Set
+    from scratch, classes like HashSet and LinkedHashSet just extend AbstractSet
+    and implement only the parts they need to customize.

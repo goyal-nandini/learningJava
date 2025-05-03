@@ -1,0 +1,21 @@
+✅ Hash Code Concept:
+sir said in vedio:
+"Each element has a hash code, and because of this hash code,
+it can't have duplicate elements."
+
+You're almost correct, but let's refine this:
+
+        Every object in Java has a hashCode() method.
+
+        HashSet uses the hashCode() to determine where to place the object in
+        memory (hash bucket).
+
+        But just the hashCode() is not enough to guarantee uniqueness because
+        different objects can have the same hash code (called a hash collision).
+
+So, Java uses two steps to check duplicates:
+
+        Check hashCode() — faster initial check.
+
+        If hashCode matches, then check equals() — final check to ensure real equality.
+

@@ -1,0 +1,8 @@
+Very simple rule to remember:(in context with pattern 16 and former in nb)
+
+Situation	Casting needed?	            Why?
+
+Comparison  (<, >, <=, >=)	            ❌ No	Java auto-promotes types
+                                        safely for comparison.
+Assignment  (=)	                        ✅ Yes	Assignment needs matching
+                                        types, else possible data loss.

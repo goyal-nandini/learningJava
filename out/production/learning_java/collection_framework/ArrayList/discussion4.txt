@@ -1,0 +1,25 @@
+!!imp!!
+In Java, the System.out.println() method can print any type of data, but it needs to
+convert non-primitive data types (like objects) into a string format to print them.
+For objects, Java automatically calls the toString() method to get a string representation
+of the object.
+
+📍📍
+when you pass an object to System.out.println() (or System.out.print()), the toString()
+method of that object is automatically called to get the string representation of the
+object.
+
+Here’s how it works:
+
+System.out.println(): This method prints out whatever is passed to it, followed by a new
+line. If you pass a primitive type (like int, char, etc.), it will simply print it out.
+But if you pass an object, it will call the object’s toString() method to convert the
+object to a string.
+
+"toString()" method: Every class in Java inherits the "toString()" method from the "Object"
+class. The default "toString()" method in Object prints out the memory address of the object
+(in a form like ClassName@hashcode). However, many classes "override" the "toString()" method
+to provide a more meaningful string representation of the object.
+
+refer this!! where i aksed
+https://chatgpt.com/share/680e3e0d-1a98-8008-8f85-ec7fd2c6b187

@@ -1,0 +1,32 @@
+Iterator is a special object that helps you loop through a collection (like ArrayList)
+one element at a time.
+
+Iterator is an interface, not a class.
+
+✅ Meaning:
+
+It's like a "contract" — it says, "Whoever implements me must provide methods like
+hasNext(), next(), and remove()."
+
+Classes like ArrayList provide their own "Iterator" object by following this contract.
+
+So when you write:
+
+import java.util.Iterator;
+you are importing the Iterator interface so that you can declare:
+
+Iterator<String> it = stud.iterator();
+Here:
+
+1. stud.iterator() → is a method inside ArrayList.
+
+2. It returns an object that implements the Iterator interface.
+
+3. So even though Iterator is an interface, you are holding the actual object
+(behind the scenes) that knows how to move through the ArrayList.
+
+⭐In very simple words:
+Iterator = Interface (like a remote control's design — "there should be next button, has next check, etc.")
+
+ArrayList's iterator = Actual remote control (with real working buttons)
+

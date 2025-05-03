@@ -1,0 +1,68 @@
+ 1. ArrayList<String> stud = new ArrayList<>(); vs List<String> stud = new ArrayList<>();
+
+ Both of these lines create an ArrayList and store it in the variable stud. The primary
+ difference lies in the type of the variable (List vs ArrayList) and how you use the
+ interface vs concrete class.
+
+ 1.1 ArrayList<String> stud = new ArrayList<>();
+ ArrayList<String>: Here, you are directly using the "concrete class ArrayList". This means
+ that your variable stud is specifically tied to the ArrayList implementation. You will
+ use all the methods and features that ArrayList provides.
+
+ This approach locks your code to ArrayList. If later you decide to switch to a different
+ implementation of List (like LinkedList), you would need to change this line to match the
+ new implementation.
+
+ 1.2 List<String> stud = new ArrayList<>();
+ List<String>: Here, you are using the "interface List". List is a more general type, and
+ ArrayList is just one implementation of that interface.
+
+ This approach allows your code to be more flexible. If you later decide to switch from
+  ArrayList to LinkedList (or any other List implementation), you can do so without
+  changing the type of the variable. You would only need to modify the object creation
+  (new LinkedList<>()), leaving the List<String> declaration unchanged.
+
+ In summary:
+
+ ArrayList<String> locks you to the ArrayList implementation.
+
+ List<String> allows flexibility and follows good object-oriented programming principles
+ of coding to interfaces.
+
+ 2. What is <> (Diamond Operator)?
+ The diamond operator (<>) is used in Java to simplify the syntax when working with generics.
+ It was introduced in Java 7 to improve code readability and reduce redundancy.
+
+ Before Java 7:
+
+ ArrayList<String> stud = new ArrayList<String>();
+ Here, the generic type String is specified twice — once on the left side (in the variable
+ declaration) and once on the right side (in the constructor).
+
+ From Java 7 onward:
+
+ ArrayList<String> stud = new ArrayList<>();
+ The diamond operator (<>) allows Java to infer the type automatically. The compiler knows
+  that the variable stud is of type ArrayList<String>, so it automatically infers the
+   generic type for the constructor (new ArrayList<>()), which makes the code shorter and
+    cleaner.
+
+ In summary, the diamond operator (<>) helps reduce redundancy and improve code readability,
+  especially when dealing with generics.
+
+ 3. What is () (Constructor Syntax)?
+ () is used to call the constructor of a class.
+
+ When you write new ArrayList<>(), you're calling the constructor of the ArrayList class
+ to create a new ArrayList object. Since we use the diamond operator (<>), the compiler
+ knows the generic type (in this case, String), and there's no need to specify it again.
+
+ Here's the breakdown:
+
+ new ArrayList<>(): Creates a new instance of ArrayList with the default constructor, which
+  initializes the list with an initial capacity of 10 (by default).
+
+ new ArrayList<String>(): This would be the same as the previous statement, explicitly
+ mentioning the type in the constructor.
+
+ In summary, () is used to call the constructor and create a new instance of a class.

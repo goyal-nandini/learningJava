@@ -1,0 +1,43 @@
+The HashSet class in Java is part of the Collection Framework and is used to store
+a collection of unique elements. It is backed by a hash table, and it implements the
+Set interface.
+
+✅ Key Features of HashSet:
+No Duplicates: It does not allow duplicate elements.
+
+No Order Guarantee: The elements are not stored in the order in which they were inserted.
+
+Allows null: At most one null element is allowed.
+
+Efficient Operations: Basic operations like add, remove, contains have constant time
+performance on average (O(1)).
+
+👇
+⚙️ Common Methods of "set" interface which is implemented by HashSet, LinkedHashSet, TreeSet:
+
+Method	                Description
+add(E e)	            Adds the specified element if not present
+remove(Object o)	    Removes the specified element if present
+contains(Object o)	    Checks if the set contains the element
+size()	                Returns the number of elements in the set
+isEmpty()	            Checks if the set is empty
+clear()	                Removes all elements from the set
+
+👇⭐
+HashSet, LinkedHashSet, TreeSet inherit these methods from:
+
+Collection interface (via Set)
+
+Or override them to provide specific behavior
+
+👇
+🧠 Internal Working:
+Internally uses a HashMap to store elements.
+
+Each element is stored as a key in the internal HashMap with a constant dummy value.
+
+👇
+Concept	                HashSet	                            HashMap
+Stores	                Only keys (unique elements)	        Key-value pairs
+Backed by	            HashMap	                            Actual key-value structure
+Internal storage	    map.put(element, dummy)	            map.put(key, value)
