@@ -1,3 +1,5 @@
+package BasicHashing;
+
 import java.util.Scanner;
 public class Hashing {
     public static int withoutHashing(int n, int[] arr, int num){
@@ -16,9 +18,10 @@ public class Hashing {
         for(int i : hash)
             hash[i] = 0;
         // pre-computation i.e. assigning frequencies for each number in given array arr.
-        for(int i=0; i<num; i++){
+        for(int i=0; i<arr.length; i++){
             hash[arr[i]] += 1;
         }
+        // fetching and returning
         return hash[n]; // n is the desired number whose frequency is user willing to see
     }
     public static void main(String[] args) {
