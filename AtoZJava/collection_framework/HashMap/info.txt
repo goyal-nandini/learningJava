@@ -1,0 +1,25 @@
+Collection → for single values (List, Set, etc.)
+
+Map → for key-value pairs (Map<K, V>)
+
+✅ HashMap implements Map.
+So yes:
+
+public class HashMap<K, V> implements Map<K, V>
+But not:
+
+HashMap does NOT implement Collection
+
+✅A hashmap, also known as a hashtable, is a data structure that stores key-value
+pairs, allowing for fast retrieval of values based on their keys.
+
+✅A HashMap<K, V> in Java is a data structure that stores key-value pairs.
+
+                Map<String, Integer> map = new HashMap<>();
+                map.put("Alice", 90);
+                map.put("Bob", 80);
+
+K = Key (e.g., String)
+V = Value (e.g., Integer)
+Keys must be unique.
+Uses hashing to store and retrieve values quickly.

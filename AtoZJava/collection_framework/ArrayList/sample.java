@@ -1,4 +1,4 @@
-package collection_framework;
+package collection_framework.ArrayList;
 
 public class sample {
     public static void main(String[] args) {
@@ -12,6 +12,8 @@ public class sample {
 
 //        Arrays are objects in Java created by special array classes, and they all
 //        ultimately inherit from "java.lang.Object".
+
+        
     }
 
 

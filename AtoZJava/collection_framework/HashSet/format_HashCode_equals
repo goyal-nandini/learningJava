@@ -1,0 +1,61 @@
+✅ Why do we override equals() and hashCode()?
+When you add objects to a HashSet, Java uses:
+
+ @ hashCode() to find the bucket
+
+ @ equals() to check for duplicates within that bucket
+
+So, if you don't override them properly, even duplicate-looking objects can be stored multiple times.
+
+Term	        Meaning
+hashCode()	    Returns an int to decide the bucket (drawer)
+Bucket	        The place in memory (like an array slot) where objects with the same hash go
+equals()	    Used inside the bucket to detect duplicates
+
+🔸 equals(Object o)
+    Used to compare two objects
+
+    Must return true if they should be considered "equal"
+
+🔸 hashCode()
+    Must return same integer for equal objects
+
+    Used to place the object in the right bucket in the HashSet
+
+🔧🔧🔧 What is a "Bucket" in HashSet/HashMap?
+Imagine a HashSet is like a cabinet with 100 drawers.
+
+Each drawer is a bucket.
+
+When you add an object to the HashSet:
+  1.  Java calls the object’s hashCode() method.
+
+  2.  That hashCode() (an integer) is used to find which drawer (bucket) to store the object in.
+
+  3.  Inside that bucket, Java stores the object.
+
+📦📦📦 Real Example
+Let’s say your hashCode() returns:
+
+return 35;
+
+Then Java does:
+
+bucketIndex = 35 % table.length;
+
+If table has 16 buckets, then:
+
+bucketIndex = 35 % 16 = 3;
+
+So your object is stored in bucket #3.
+
+🧠🧠🧠 Why this Matters
+Because:
+
+    Objects with the same hash code go into the same bucket.
+    
+    But multiple objects can land in the same bucket (hash collision).
+    
+    So inside a bucket, Java uses equals() to check whether an object is truly equal or just has the same hash.
+
+

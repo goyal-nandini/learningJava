@@ -1,11 +1,11 @@
 27/4
 We learned today to implement
-@@LIST interface using
+@@ LIST interface using
 array list class
 stack class and
 linked list class and also
 implementing the
-@@QUEUE interface using linked list class so
+@@ QUEUE interface using linked list class so
 
 linked list can implement two interfaces list and queue
 
