@@ -41,7 +41,7 @@ public class Hashing {
             int n = sc.nextInt();
             // for very test case t, value of n changes and your code is
             // checked upon the that input
-            System.out.println(withoutHashing(n, arr, num));
+//            System.out.println(withoutHashing(n, arr, num));
             System.out.println(withHashing(n, arr, num));
         }
 

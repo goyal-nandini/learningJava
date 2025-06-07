@@ -1,0 +1,4 @@
+the TreeMap can be used in HashMap --> no doubt!!
+only difference comes in time complexity and order of keys
+
+prefer HashMap over TreeMap

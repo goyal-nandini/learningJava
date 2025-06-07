@@ -21,8 +21,10 @@ public class LearnHashMap {
         System.out.println(hm.containsValue(5));
         System.out.println(hm.isEmpty());
 
-        System.out.println(hm.get("Four"));
-        System.out.println(hm.remove("Three"));
+        System.out.println(hm.get("Four")); //4 as value for key
+        // In Java, the get() method of a HashMap is used to retrieve the value
+        // associated with a specific key.
+        System.out.println(hm.remove("Three")); //3 as value for key three
 
         // iterate through map
         /*  map.entrySet() returns a set of entries.
