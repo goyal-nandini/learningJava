@@ -1,0 +1,66 @@
+🔷 What is a TreeMap?
+A TreeMap is a Map (key-value pairs) that:
+
+    Stores elements in sorted order of keys (ascending by default).
+
+    Does not allow null keys (unlike HashMap).📍
+
+    Is based on Red-Black Tree (self-balancing BST) internally.
+
+Basic Operations:
+| Method           | Description                     |
+| ---------------- | ------------------------------- |
+| `put(k, v)`      | Adds key-value pair             |
+| `get(k)`         | Returns value for the given key |
+| `remove(k)`      | Removes key and its value       |
+| `containsKey(k)` | Checks if a key exists          |
+| `firstKey()`     | Returns the **smallest** key    |
+| `lastKey()`      | Returns the **largest** key     |
+| `higherKey(k)`   | Next higher key than given key  |
+| `lowerKey(k)`    | Next lower key than given key   |
+
+📍Great question! Let's focus just on this part:
+
+ ---
+
+ ## 🔴 Why TreeMap does not allow `null` keys**, but **HashMap allows one `null` key?
+
+ ### ✅ In `HashMap`:
+
+ HashMap<String, String> map = new HashMap<>();
+ map.put(null, "Hello");
+ System.out.println(map);  // Output: {null=Hello}
+
+
+ * `HashMap` uses **hashing** to store keys.
+ * For `null`, it has pecial handling internally, so it **accepts one `null` key**.
+
+ ### ❌ In `TreeMap`:
+
+ TreeMap<String, String> map = new TreeMap<>();
+ map.put(null, "Hello"); // 🚫 Throws NullPointerException!
+
+ * `TreeMap` uses a **Red-Black Tree** to store keys in **sorted order**.
+ * To sort, it compares keys using:
+
+   *`compareTo() (if natural order)
+   * Or a custom Comparator
+
+ ➡️ But if the key is `null`, it **can’t be compared**, so Java throws:
+
+
+ NullPointerException
+
+ ### 🧠 In short:
+
+ | Map Type  | Allows `null` key? | Why?                                                |
+ | --------- | ------------------ | --------------------------------------------------- |
+ | `HashMap` | ✅ Yes (one only)   | Uses hashing, handles `null`                        |
+ | `TreeMap` | ❌ No               | Needs to **compare** keys, `null` can't be compared |
+
+
+ ### 💡 Analogy:
+
+ * `HashMap` just needs a label to store something. Even if it's `null`, it can say: “Okay, I’ll handle this.”
+ * `TreeMap` needs to sort those labels. But how can it sort something that’s missing? (`null`) ❌
+

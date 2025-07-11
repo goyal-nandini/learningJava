@@ -23,3 +23,16 @@ K = Key (e.g., String)
 V = Value (e.g., Integer)
 Keys must be unique.
 Uses hashing to store and retrieve values quickly.
+
+Basic Operatinons:
+| Operation       | Method             | Description                 |
+| --------------- | ------------------ | --------------------------- |
+| Insert          | `put(key, value)`  | Adds a key-value pair       |
+| Get             | `get(key)`         | Retrieves value for the key |
+| Remove          | `remove(key)`      | Deletes entry by key        |
+| Check existence | `containsKey(key)` | Checks if key exists        |
+| Size            | `size()`           | Returns number of entries   |
+| Clear all       | `clear()`          | Removes all entries         |
+| Key set         | `keySet()`         | Returns all keys            |
+| Values          | `values()`         | Returns all values          |
+| Entry set       | `entrySet()`       | Returns key-value pairs     |
