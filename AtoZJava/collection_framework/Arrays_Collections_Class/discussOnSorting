@@ -1,0 +1,56 @@
+
+### 🟢 Why `Collections.sort()` Alone Can’t Sort a Custom Class in Java
+
+#### 🔸 Problem:
+
+When we try:
+
+Collections.sort(listOfCustomObjects);
+
+It works for built-in types like `Integer`, `String`, etc., but throws an error for custom classes like `Person`.
+
+#### 🔸 Reason:
+
+Java needs a way to compare two objects, which it does using the `compareTo()` method from the `Comparable` interface.
+
+* ✅ Built-in classes like `String`, `Integer` implement `Comparable` → Java knows how to sort them.
+* ❌ Custom classes (e.g., `Person`) don’t implement `Comparable` → Java doesn’t know how to compare them → **Sorting fails**.
+
+#### 🔸 Error You’ll Get:
+
+java.lang.ClassCastException: class Person cannot be cast to class Comparable
+
+### ✅ Solution 1: Implement `Comparable` in the class
+
+class Person implements Comparable<Person> {
+    int age;
+    String name;
+
+    public int compareTo(Person other) {
+        return this.age - other.age; // sorting by age
+    }
+}
+
+Then you can do:
+
+Collections.sort(listOfPersons);
+
+### ✅ Solution 2: Use `Comparator` externally (no need to change class)
+
+Collections.sort(listOfPersons, (a, b) -> a.age - b.age);
+
+
+Or using a comparator object:
+
+Comparator<Person> byName = (a, b) -> a.name.compareTo(b.name);
+Collections.sort(listOfPersons, byName);
+
+
+### 🔑 Summary:
+
+| Case                                 | Sorts successfully? | Why                              |
+| ------------------------------------ | ------------------- | -------------------------------- |
+| Built-in types (`String`, `Integer`) | ✅                   | Already implement `Comparable`   |
+| Custom class (e.g., `Person`)        | ❌                   | Java doesn't know how to compare |
+| With `Comparable` or `Comparator`    | ✅                   | Java can now compare and sort    |
+

@@ -11,3 +11,10 @@ linked list can implement two interfaces list and queue
 
 29/4
 now did priorityqueue and arraydeque
+
+wow its an update:
+since last month i didn't do collections but now lets do it...!!
+its 11/7 i know its long...but i saw it on 8/6 while doing basic hashing from
+dsa sheet. well in between i tackle with sorting, arrays and binary search...
+problem solving daily one-two questions minimum...
+okay now its time to complete the collections!!

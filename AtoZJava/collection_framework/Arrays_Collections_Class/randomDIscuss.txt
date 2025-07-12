@@ -1,0 +1,9 @@
+🔷 int[] vs Integer[] — What's the Difference?
+
+| Feature             | `int[]`                           | `Integer[]`                           |
+| ------------------- | --------------------------------- | ------------------------------------- |
+| Data Type           | Primitive type array          | Object type array (Wrapper class) |
+| Memory Efficient    | ✅ Yes                             | ❌ Less efficient                      |
+| Can store `null`?   | ❌ No                              | ✅ Yes                                 |
+| Works with Generics | ❌ No (Java generics need objects) | ✅ Yes                                 |
+| Autoboxing needed?  | ❌ No                              | ✅ Yes (Java converts int ↔ Integer)   |
