@@ -11,11 +11,12 @@ public class LearnArraysClass {
         | Method                          | Description                               |
         | ------------------------------- | ----------------------------------------- |
         | `Arrays.sort(arr)`              | Sorts an array                            |
-        | `Arrays.toString(arr)`          | Prints array as string (for easy viewing) |
+        | `Arrays.toString(arr)`  ✨        | Prints array as string (for easy viewing) |
         | `Arrays.binarySearch(arr, key)` | Searches using binary search              |
         | `Arrays.equals(arr1, arr2)`     | Compares two arrays                       |
         | `Arrays.fill(arr, value)`       | Fills all elements with given value       |
-        | `Arrays.parallelSort(arr)`       | sorts arrays faster      |*/
+        | `Arrays.parallelSort(arr)`       | sorts arrays faster      |
+        | Arrays.copyOf(array, newLength) | copy/resize array |    */
 
 
         int[] n = {1, 3, 5, 6, 7, 10};
@@ -45,3 +46,38 @@ public class LearnArraysClass {
 
     }
 }
+/* ✨📍
+🔸 Problem First:
+When you try to print an array directly like this:
+int[] arr = {1, 2, 3};
+System.out.println(arr);
+It won’t print the actual numbers. You’ll get something weird like:
+[I@15db9742
+That’s just the memory reference, not the content.
+
+🔹 Solution: Arrays.toString(arr)
+To properly print the contents of the array, use:
+System.out.println(Arrays.toString(arr));
+Output:
+[1, 2, 3]
+
+✅ Now it prints the actual values in the array, wrapped in [].
+
+🔧 Why does it work?
+        Arrays.toString() is a method from the java.util.Arrays class that:
+
+        Takes any array (like int[], double[], String[], etc.)
+
+        Converts it into a readable String
+
+quick summary:
+| Array Type  | Can Use `Arrays.toString()` | Why Use It?                             |
+| ----------- | --------------------------- | --------------------------------------- |
+| `int[]`     | ✅ Yes                       | Primitive numbers                       |
+| `Integer[]` | ✅ Yes                       | Object type, useful with collections    |
+| `String[]`  | ✅ Yes                       | For printing or displaying names, texts |
+| `char[]`    | ✅ Yes                       | For individual characters               |
+
+
+
+*/
