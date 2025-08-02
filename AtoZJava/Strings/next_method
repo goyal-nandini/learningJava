@@ -1,0 +1,45 @@
+### 🔹 `next()` — What it does:
+
+The `next()` method in Java’s `Scanner` **returns the next token** (word/part of input)
+**based on the delimiter**.
+
+---
+
+### 🧠 By default:
+
+* Scanner splits input **by whitespace** (space, tab, newline).
+* So calling `next()` returns the next **word**, not the whole line.
+
+---
+
+### ✅ In your example:
+
+```java
+String email = "name@email.com";
+String username = new Scanner(email).useDelimiter("@").next();
+System.out.println(username); // prints: name
+```
+
+* You **changed the delimiter** from default whitespace to `"@"`.
+* So `Scanner` splits `"name@email.com"` into:
+  `["name", "email.com"]`
+* Then `next()` returns the **first token** = `"name"`
+
+---
+
+### ⚠️ Important:
+
+* `next()` only gives **one token** — not all parts.
+* If you call `next()` again, it gives `"email.com"` (the next token).
+* If you keep calling `next()` after tokens are exhausted, you'll get a `NoSuchElementException`.
+
+---
+
+### 🔁 Compared to:
+
+| Method       | Returns                       | Default Delimiter |
+| ------------ | ----------------------------- | ----------------- |
+| `next()`     | Next token (as `String`)      | Whitespace        |
+| `nextLine()` | The **entire remaining line** | `\n` (newline)    |
+| `nextInt()`  | Next token parsed as `int`    | Whitespace        |
+

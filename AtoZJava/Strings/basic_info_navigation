@@ -1,0 +1,16 @@
+hi i am doing this from kunal kushwaha...
+
+and about wrapper class he said we'll do it further... which i am looking forward to!!
+
+for that time the wrapper class:
+A Wrapper Class in Java is used to wrap (convert) a primitive data type into an object.
+| Primitive Type | Wrapper Class |
+| -------------- | ------------- |
+| `int`          | `Integer`     |
+| `char`         | `Character`   |
+| `boolean`      | `Boolean`     |
+| `double`       | `Double`      |
+| `float`        | `Float`       |
+| `byte`         | `Byte`        |
+| `short`        | `Short`       |
+| `long`         | `Long`        |
