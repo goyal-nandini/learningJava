@@ -3,12 +3,26 @@ package LinkedList;
 public class SearchingEleLL {
 
     public static boolean isPresent(Node head, int ele){
-        Node temp = head;
-        while(temp != null){
-            if(temp.data == ele) return true;
-            temp = temp.next;
+
+        // iterative approach: 🙌🙌📍📍🚩🚩👏👏
+//        Node temp = head;
+//        while(temp != null){
+//            if(temp.data == ele) return true;
+//            temp = temp.next;
+//        }
+//        return false;
+
+        // recusive approach:🙌🙌
+        // Check if we reach the end of the Linked List.
+        if (head == null) {
+            return false;
         }
-        return false;
+        // Value found so will end our search.
+        if (head.data == ele) {
+            return true;
+        }
+        // Recurring for the next node.
+        return isPresent(head.next, ele);
     }
 
     public static void main(String[] args) {
