@@ -195,9 +195,9 @@ Both checks together cover all invalid positions without crashing. ✅*/
 //        Node res = delHead(head);
 //        Node res = delTail(head);
 //        Node res = delPos(head, 1);
-//        Node res = delPos_Striver(head, 3);
+        Node res = delPos_Striver(head, 5);
 //        Node res = delVal(head, 10);
-        Node res = delVal_Striver(head, 50);
+//        Node res = delVal_Striver(head, 50);
        printLL(res);
 
     }
