@@ -1,9 +1,46 @@
 package LinkedList;
 
+import java.util.Stack;
+
 import static LinkedList.ArrayToDLL.printDLL;
 
 public class ReverseDLL {
-    public static DLLNode reverseDLL(DLLNode head){
+    public static DLLNode brute_reverseDLL(DLLNode head){
+        //using stack
+        Stack<Integer> st = new Stack<>();
+        DLLNode temp = head;
+        while(temp != null){
+            st.push(temp.data);
+            temp = temp.next;
+        }
+        // putting back to LL from stack
+        temp = head;
+        while(temp != null){
+            temp.data = st.pop();
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    public static DLLNode reverseDLL_byStriver(DLLNode head){
+        // okay its 6/9/25 i am touching this after 15 days..no worries
+        // i'll make it complete lets rock lets finish this...
+
+        //some little changes like: only swapping the next and back references!! and one variable less
+        // lets do it..!!
+        DLLNode prev = null;
+        DLLNode curr = head;
+        while(curr != null){
+            prev = curr.back;
+            curr.back = curr.next;
+            curr.next = prev;
+            curr = curr.back;
+        }
+
+        return prev.back;
+
+    }
+    public static DLLNode reverseDLL_byMe(DLLNode head){
         // wow at one go just this line added and rest is same as reverse singly LL
         // wow i am so thankfullll for my prev rough lessons on dsa topics in dec 24...!!
 
@@ -33,7 +70,9 @@ public class ReverseDLL {
             prev = prev.next;
         }
 
-        printDLL(reverseDLL(head));
+//        printDLL(brute_reverseDLL(head));
+        printDLL(reverseDLL_byStriver(head));
+//        printDLL(reverseDLL_byMe(head));
 
     }
 }

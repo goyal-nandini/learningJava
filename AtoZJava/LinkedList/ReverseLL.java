@@ -1,9 +1,40 @@
 package LinkedList;
 
+import java.util.Stack;
+
 import static LinkedList.ArrayToLL.printLL;
 
 public class ReverseLL {
-    public static Node reverseLL(Node head){
+    public static Node brute_reverseLL(Node head){
+        //using stack
+        Stack<Integer> st = new Stack<>();
+        Node temp = head;
+        while(temp != null){
+            st.push(temp.data);
+            temp = temp.next;
+        }
+        // putting back to LL from stack
+        temp = head;
+        while(temp != null){
+            temp.data = st.pop();
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    public static Node recursive_reverseLL(Node head){
+        // okay its 6/9/25 i am touching this after 15 days..no worries i'll make
+        // it complete lets rock lets finish this...
+        if(head == null || head.next == null) return head;
+
+        Node newHead = recursive_reverseLL(head.next);
+        Node front = head.next;
+        front.next = head;
+        head.next = null;
+        return newHead;
+    }
+
+    public static Node iterative_reverseLL(Node head){
         Node next = head;
         Node curr = head;
         Node prev = null;
@@ -28,7 +59,9 @@ public class ReverseLL {
             mover = mover.next;
         }
 
-        printLL(reverseLL(head));
+//        printLL(brute_reverseLL(head));
+        printLL(recursive_reverseLL(head));
+//        printLL(iterative_reverseLL(head));
 
 
     }
