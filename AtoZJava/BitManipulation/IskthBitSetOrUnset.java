@@ -2,7 +2,7 @@ package BitManipulation;
 
 // 2 approaches -> left shift and right shift
 
-public class kthBitSetOrUnset {
+public class IskthBitSetOrUnset {
     public static void main(String[] args) {
         System.out.println(isKthBitSet_leftShift(13, 2));
         System.out.println(isKthBitSet_rightShift(13, 1));
