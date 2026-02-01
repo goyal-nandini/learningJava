@@ -1,4 +1,4 @@
-package OOPS;
+package com.nandini.oops;
 import java.util.Arrays;
 
 // here is concept not logic!!

@@ -1,4 +1,4 @@
-package OOPS;
+package com.nandini.oops;
 
 public class swapConceptII {
     public static void main(String[] args) {

@@ -10,7 +10,8 @@ public class AutoBoxing_Unboxing {
     public static void autoboxingDemo() {
         System.out.println("\n=== AUTOBOXING & UNBOXING ===\n");
 
-        // Autoboxing: int → Integer (automatic conversion)
+        //⭐ Autoboxing: int → Integer (automatic conversion)
+        // primitive -> object
         Integer num1 = 5;  // Java automatically converts int to Integer
 
         // This is what Java does behind the scenes:
@@ -19,7 +20,8 @@ public class AutoBoxing_Unboxing {
         System.out.println("num1: " + num1);
         System.out.println("num2: " + num2);
 
-        // Unboxing: Integer → int (automatic conversion)
+        //⭐ Unboxing: Integer → int (automatic conversion)
+        // object to primitive
         int primitive = num1;  // Java automatically converts Integer to int
 
         // This is what Java does behind the scenes:

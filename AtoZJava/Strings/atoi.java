@@ -3,7 +3,6 @@ package Strings;
 public class atoi {
     public static void main(String[] args) {
         System.out.println(myAtoi("  -04 2"));
-
     }
 
     public static int myAtoi(String s) {

@@ -1,4 +1,4 @@
-package OOPS;
+package com.nandini.oops;
 
 // 🎥🫣👁️from 28 aug to 10 nov to 24/11 🔦
 class Student{

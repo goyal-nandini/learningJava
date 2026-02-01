@@ -123,9 +123,19 @@ Collection (interface)
         ├── PriorityQueue (class)
         └── LinkedList (class) - yes, it implements both List and Queue!
 
-Map (interface) - NOT part of Collection!
+Map (interface) - NOT part of Collection! **REASON::!!??
     ├── HashMap (class)
     ├── TreeMap (class)
     └── LinkedHashMap (class)
+
+**THE  Reason:
+Collection interface is for SINGLE elements.
+Map stores KEY-VALUE PAIRS, not single elements!
+
+WHY separate?
+
+Collection has methods like add(element) - for single elements
+Map has methods like put(key, value) - for pairs
+Fundamentally different structures!
  */
 }

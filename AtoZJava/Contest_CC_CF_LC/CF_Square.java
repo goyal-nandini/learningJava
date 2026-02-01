@@ -2,7 +2,7 @@ package Contest_CC_CF_LC;
 
 import java.util.Scanner;
 
-public class A_Square {
+public class CF_Square {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();

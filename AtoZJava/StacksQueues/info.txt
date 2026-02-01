@@ -1,0 +1,36 @@
+✅ Time and Space Complexity Summary
+
+| Method            | TC (Array Queue)       | SC (Array Queue)         | TC (LL Queue)          | SC (LL Queue)           |
+| ----------------- | ---------------------- | ------------------------ | ---------------------- | ----------------------- |
+| `offer()`         | O(1)                   | O(1)                     | O(1)                   | O(1)                    |
+| `poll()`          | O(1)                   | O(1)                     | O(1)                   | O(1)                    |
+| `peek()`          | O(1)                   | O(1)                     | O(1)                   | O(1)                    |
+| `size()`          | O(1)                   | O(1)                     | O(1)                   | O(1)                    |
+| `display()`       | O(n)                   | O(1)                     | O(n)                   | O(1)                    |
+| **Overall class** | **O(1) per operation** | **O(n)** (array storage) | **O(1) per operation** | **O(n)** (linked nodes) |
+
+
+doubt on tc in conversion due to nested loop
+solution to it:
+👁️Even if an inner while loop pops many items during one iteration…
+
+➡ Those items will never be popped again later
+➡ So work done per element is constant amortized 🫣(i've seen it in lc que ->
+Implementation of queue using stack approach2)
+
+🔍 Quick Mental Model Trick
+Ask this question whenever nested loops appear:
+
+Can the inner loop do more total operations than N across the whole function? 👣😃
+➜ If NO → time complexity stays O(n)
+
+✅ Simple One-Liner to Remember
+    If inner loop operations don’t repeat for the same element → O(n)
+
+    If inner loop redoes work fully for each outer iteration → O(n²)
+
+✅ So Your Thinking Was Right ✅
+You assumed O(n²) → that’s the safest starting assumption.
+Then we applied reasoning → discovered amortized O(n).
+
+That’s exactly how DSA intuition improves. 🚀🔥
