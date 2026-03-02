@@ -1,4 +1,4 @@
-package BT.SegmentTree;
+package Trees.SegmentTree;
 
 public class Main {
     public static void main(String[] args) {

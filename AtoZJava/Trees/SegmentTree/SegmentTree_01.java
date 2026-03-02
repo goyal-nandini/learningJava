@@ -1,4 +1,4 @@
-package BT.SegmentTree;
+package Trees.SegmentTree;
 // Node-based Segment Tree
 /**
  * Segment Tree Implementation

@@ -1,4 +1,4 @@
-package BT.SegmentTree;
+package Trees.SegmentTree;
 
 // Array-Based Segment Tree
 public class SegmentTree_02 {
