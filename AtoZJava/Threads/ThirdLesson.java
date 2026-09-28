@@ -1,7 +1,5 @@
 package Threads;
 
-// must read this: https://www.w3schools.com/java/java_threads.asp
-
 // 2 ways to create threads in java
 // 1. extending Thread
 // 2. implementing Runnable
@@ -53,7 +51,17 @@ With Runnable:
 
 
 Thread executes the Runnable
-thread class hai aur runnable ek interface*/
+thread class hai aur runnable ek interface
+
+the flow it used:
+from using thread class 'object' in runnable interface 'reference' ka sampleB ka 'object'
+Thread.start()
+   ↓
+Thread creates new thread
+   ↓
+Thread.run()
+   ↓
+calls Runnable.run()*/
 
 /*📝📝from yt description:
 * #1

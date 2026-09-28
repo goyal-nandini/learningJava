@@ -1,6 +1,7 @@
 package fundamentals;
 
 import java.util.*;
+import java.util.stream.Collectors;
 // RESOURCE:
 //https://copilot.microsoft.com/shares/nNqc64W9q2xaWzLn6uuZo
 
@@ -53,6 +54,18 @@ public class listToArray_viceVersa {
 
         System.out.println(list);          // [5, 2, 8, 1, 9]
         System.out.println(resizableList); // [5, 2, 8, 1, 9]
+    }
+    public static void arrayToList2(){
+        int[] arr2 = {5, 2, 8, 1, 9};
 
+//        List<Integer> list2 = Arrays.asList(arr2); ❌ as The problem is that
+//        Arrays.asList() doesn't work directly with primitive arrays like int[].
+
+        // do manual conversion instead 👇
+        List<Integer> list2 = new ArrayList<>();
+        for (int num : arr2) {
+            list2.add(num);
+        }
+        System.out.println(list2);
     }
 }

@@ -61,7 +61,7 @@ javaParent parent = new Child();  // ✅ Child IS-A Parent
 Box box = new BoxWeight();    // ✅ BoxWeight IS-A Box
 
 ❌ Not Allowed (Downcasting without checking):
-javaChild child = new Parent();   // ❌ Parent might not be a Child
+Child child = new Parent();   // ❌ Parent might not be a Child
 BoxWeight bw = new Box();     // ❌ Box is not necessarily a BoxWeight*/
 
 

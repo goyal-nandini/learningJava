@@ -1,0 +1,4 @@
+pending que:
+Q2: Recamán sequence with fortunate number multiplier
+and
+Q3: Maximum weight independent set with Kolakoski bonus

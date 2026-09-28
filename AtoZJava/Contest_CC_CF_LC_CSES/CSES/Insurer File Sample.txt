@@ -1,0 +1,58 @@
+==============================
+FAKE INSURER POLICY RULES
+==============================
+
+1. POLICY ELIGIBILITY
+---------------------
+- Applicant must be between 18 and 70 years of age.
+- Valid government ID is mandatory.
+- Policyholder must disclose all pre-existing conditions.
+
+2. PREMIUM PAYMENT RULES
+------------------------
+- Premium must be paid monthly, quarterly, or annually.
+- A grace period of 15 days is allowed after due date.
+- Policy will lapse if payment is not received within grace period.
+
+3. CLAIM CONDITIONS
+-------------------
+- Claims must be filed within 30 days of incident.
+- Required documents:
+  * Claim form
+  * Identity proof
+  * Medical or incident report
+- False claims will result in permanent blacklisting.
+
+4. COVERAGE RULES
+-----------------
+- Maximum coverage limit: ₹10,00,000
+- Pre-existing diseases covered after 2 years waiting period.
+- Accidental coverage starts immediately after policy activation.
+
+5. EXCLUSIONS
+-------------
+- Self-inflicted injuries
+- Damage due to illegal activities
+- War or nuclear-related incidents
+- Cosmetic procedures unless medically necessary
+
+6. POLICY CANCELLATION
+----------------------
+- Policyholder may cancel within 14 days (free-look period).
+- Refund will be issued after deducting administrative charges.
+- Insurer may cancel policy in case of fraud or misrepresentation.
+
+7. RENEWAL TERMS
+----------------
+- Policy must be renewed before expiry date.
+- Late renewal allowed within 30 days with penalty.
+- Benefits may reset if renewal is delayed beyond allowed period.
+
+8. DISPUTE RESOLUTION
+---------------------
+- All disputes subject to jurisdiction of local courts.
+- Arbitration may be used before legal proceedings.
+
+==============================
+END OF DOCUMENT
+==============================

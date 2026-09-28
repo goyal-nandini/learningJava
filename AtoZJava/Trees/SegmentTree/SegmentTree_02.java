@@ -28,23 +28,23 @@ public class SegmentTree_02 {
         return query(0, 0, n-1, l, r);
     }
 
-    private int query(int idx, int start, int end, int l, int r){
+    private int query(int idx, int start, int end, int qsi, int qei){
         // 3 cases
 
         // completely inside
-        if(start >= l && end <= r){
+        if(start >= qsi && end <= qei){
             return tree[idx];
         }
         // completely outside
-        else if(end < l || start > r) {
+        else if(end < qsi || start > qei) {
             return 0;
         }
         // overlapping
         else {
             int mid = (start+end)/2;
 
-            int leftSum = query(2*idx+1, start, mid, l, r);
-            int rightSum = query(2*idx+2, mid+1, end, l, r);
+            int leftSum = query(2*idx+1, start, mid, qsi, qei);
+            int rightSum = query(2*idx+2, mid+1, end, qsi, qei);
 
             return leftSum + rightSum;
         }

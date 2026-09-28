@@ -1,0 +1,36 @@
+started on 18/8/2026
+- did leetcode 902
+
+took it on 21/8/2026
+- revised it
+- did this problem i saw in kartik arora vedio - later found on hackerearth, // https://www.hackerearth.com/problem/algorithm/sum-of-digits-8/
+- did counting numbers from CSES
+- saw i need one extra state to handle leading zeroes for CSES problem - doing it now - done
+- doing leetcode 233 - done
+
+TODO:
+0. Understand solve(N)
+       ↓
+1. LC 233 ✅
+       ↓
+2. LC 902 ⭐ ✅
+       ↓
+3. LC 600 ⭐ ✅
+       ↓
+4. LC 1012 ⭐⭐
+       ↓
+5. LC 2719 ⭐⭐⭐
+       ↓
+6. LC 2376 ⭐⭐⭐
+       ↓
+7. Harder GFG Digit DP
+       ↓
+8. LC 1397 / advanced Digit DP
+and LC 357
+
+23/8/2026
+- did lc 600
+- todo: adj dig diff - found as repeated problem from OA aka claude*reddit proofed
+
+24/8/2026
+- did adj dig diff :)

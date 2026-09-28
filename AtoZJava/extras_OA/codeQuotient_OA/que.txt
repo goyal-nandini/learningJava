@@ -1,0 +1,14 @@
+Round 1:
+1. add 1 to each digit to a 4 digit number - ignore any carry if it occurs
+eg 1239 ans: 2340
+
+2. check anagram
+
+3. return true or false whether the password is lucky or not - lucky when there are non-adjacent single digit integers
+come in the given string
+eg we3r4g5 sd2aa23 ans: false
+
+4. Given two strings, find the minimum length string that contains both strings as subsequences.
+eg str1 : AGGTAB
+str2 b: GXTXAYB
+ans: 9

@@ -1,0 +1,9 @@
+Policy ABC Rule 1: Diabetes medication is approved if HbA1c level is above 7.5.
+Policy ABC Rule 2: Insulin is automatically approved for all Type 1 diabetes patients.
+Policy ABC Rule 3: Metformin approved for Type 2 patients with HbA1c between 7.0 and 9.0.
+Policy ABC Rule 4: Prior authorization required for diabetes specialist visits.
+Policy ABC Rule 5: HbA1c test must be recent (within 3 months) for approval.
+
+Policy XYZ Rule 1: Diabetes coverage requires 2 year waiting period for new patients.
+Policy XYZ Rule 2: Insulin pumps require prior authorization and specialist recommendation.
+Policy XYZ Rule 3: Surgery approved only if 2 conservative treatments have failed.

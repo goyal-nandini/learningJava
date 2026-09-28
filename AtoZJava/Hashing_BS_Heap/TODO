@@ -1,0 +1,49 @@
+🧩 Pipeline / Simulation Type
+🟢🟢🟢
+1. Codeforces
+Search:
+👉 “multi stage processing”, “machines scheduling”
+
+🟢🟢🟢
+2. LeetCode
+Try:
+“Process Tasks Using Servers”
+“Single-Threaded CPU”
+“Minimum Time to Complete Trips”
+
+👉 These build heap + scheduling intuition
+
+🟢🟢🟢
+3. AtCoder
+Search:
+👉 “simulation + priority queue”
+
+🔴 Greedy Deadline Type
+MUST DO:
+Job Sequencing with Deadlines
+Course Schedule III
+
+👉 These are core interview patterns
+
+🧠 How to master this fast
+
+🟢🟢🟢
+When you see a problem, ask:
+
+Is order fixed?
+YES → simulation
+NO → greedy
+
+Are resources limited?
+YES → heap
+
+Can I skip items?
+YES → optimization
+NO → simulation
+
+🚀 What YOU should remember
+When you write:
+Maximize jobs before deadlines
+👉 ALWAYS ask:
+Are jobs independent OR do they have structure (like pipeline)?
+💥 That decides the solution

@@ -1,0 +1,39 @@
+🟢🟢🟢
+- 7. Rescue Boats with Extra Constraints (Codeforces/AtCoder variants)
+   Usually add another restriction (age, color, etc.), just like your |difference| <= D condition.
+   - found 2 que on Codeforces on greedy:
+   - https://codeforces.com/problemset/problem/1399/C
+   - https://codeforces.com/problemset/problem/3/B
+
+🟢🟢🟢
+- side line: solved 'advantage shuffle' and feels very tricky - greedy are very non-intuitive at first - but here is some
+help:
+That feeling's normal — DP has more of a structured template (states, transitions) once you've seen a few patterns. Greedy has no template; you have to *prove* to yourself the greedy choice is safe each time, which is why it feels harder.
+
+Some things that build greedy intuition fast:
+
+**1. Learn the recurring "shapes" of greedy proofs** — most greedy problems fall into a handful of buckets:
+⁉️❓⁉️🙋‍♀️
+- **Exchange argument** (what you just did in Advantage Shuffle) — "if I swap this choice for another, does it ever get worse?"
+- **Sort + one pass** — job scheduling, interval problems (Meeting Rooms, Non-overlapping Intervals, Merge Intervals)
+- **Two pointers on sorted arrays** — Boats to Save People, Assign Cookies, this problem
+- **Heap-based greedy** — Task Scheduler, IPO, Reorganize String
+- **Regret / undo greedy** — you pick greedily but keep a heap to "undo" a bad choice later
+(e.g., Minimum Cost to Hire K Workers, Buy/Sell stock with fees variant)
+
+Once you tag a new problem into one of these buckets, the approach becomes way less mysterious.
+
+**2. Practice set** (good next problems, roughly increasing difficulty):
+- Assign Cookies (LC 455) — warmup, two pointer greedy ✅
+- Boats to Save People (LC 881) — two pointer, similar shape to what you just did ✅
+- Jump Game II (LC 45) — greedy range extension ✅
+- Gas Station (LC 134) — exchange argument, "if total works, one start point always works" ✅
+- Task Scheduler (LC 621) — heap + greedy
+- Non-overlapping Intervals (LC 435) — sort + greedy
+- Candy (LC 135) — two-pass greedy, classic toughie
+
+**3. When stuck, ask yourself explicitly:**
+- "What's the worst thing that could go wrong if I make the locally best choice right now?"
+- "Is there ever a case where being greedy *now* closes off a better option later?" — if you can't construct such a case, greedy's probably safe.
+
+Want me to line up the next problem from that list, or do you want to go back to your Infosys OA topic list first?
